@@ -1,0 +1,23 @@
+{
+    "logs": [
+        {
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\S536844\\Desktop\\Campus-Parking\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+=======
+            "outputFile": "C:\\Users\\S536844\\Desktop\\campus_parking_report_page\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+>>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+            "map": [
+                {
+                    "source": "C:\\Users\\S536844\\.gradle\\caches\\transforms-2\\files-2.1\\a1c6a53639aba7d8d429c16999b43ffe\\jetified-ucrop-2.2.3\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    }
+                }
+            ]
+        }
+    ]
+}
