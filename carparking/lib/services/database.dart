@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:testing/models/report.dart';
-import 'package:testing/models/report.dart';
+import 'package:testing/models/user.dart';
 
 class DatabaseService {
 
@@ -26,11 +26,25 @@ List<Report> _reportListFromSnapshot(QuerySnapshot snapshot) {
     );
   }).toList();
 }
+  // userData from snapshot
+  UserData _userDataFromSnapshot(DocumentSnapshot snapshot) {
+    return UserData(
+      uid: uid,
+      vehicleId: snapshot.data['vehicleId'],
+      desc: snapshot.data['desc'],
+    );
+  }
 
  // Get records stream
  Stream<List<Report>> get reports {
    return reportCollection.snapshots()
    .map(_reportListFromSnapshot);
+ }
+
+ // Get user doc stream
+ Stream<UserData> get userData {
+   return reportCollection.document(uid).snapshots()
+   .map(_userDataFromSnapshot);
  }
 
 }

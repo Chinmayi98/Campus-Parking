@@ -6,20 +6,23 @@ import 'package:flutter/cupertino.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:testing/shared/loading.dart';
 
 import 'package:testing/ui/pages/violationPage.dart';
 import 'package:testing/ui/widgets/app_bar.dart';
 import 'package:testing/services/database.dart';
 import 'package:provider/provider.dart';
-import 'package:testing/models/report.dart';
+import 'package:testing/models/user.dart';
+import 'package:testing/ui/pages/user_home_page.dart';
+
 /// ignore: camel_case_types
 class reportPage extends StatefulWidget {
   static const String route = '/report';
 
- @override
+  @override
   _reportPageState createState() => _reportPageState();
 }
+
 // ignore: camel_case_types
 class _reportPageState extends State<reportPage> {
   @override
@@ -28,10 +31,11 @@ class _reportPageState extends State<reportPage> {
   }
 
   final _formKey = GlobalKey<FormState>();
+  bool loading = false;
 
-  String vehicle_no;
+  String vehicle_no ='';
   String image;
-  String description;
+  String description = '';
 
   /// Active image file
   File _imageFile;
@@ -61,162 +65,179 @@ class _reportPageState extends State<reportPage> {
   /// Remove image
   void _clear() {
     setState(() => _imageFile = null);
+    setState(() => vehicle_no = null);
+    setState(() => description = null);
   }
 
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<List<Report>>.value(
-          value: DatabaseService().reports,
-          child: Scaffold(
-          appBar: ApplicationBar(),
+    final user = Provider.of<User>(context);
 
-          // bottomNavigationBar: BottomAppBar(
-          //   child: Row(
-          //     children: <Widget>[
-          //       IconButton(
-          //         icon: Icon(Icons.photo_camera),
-          //         onPressed: () => _pickImage(ImageSource.camera),
-          //       ),
-          //       IconButton(
-          //         icon: Icon(Icons.photo_library),
-          //         onPressed: () => _pickImage(ImageSource.gallery),
-          //       ),
-          //     ],
-          //   ),
-          // ),
+    return StreamBuilder<UserData>(
+        stream: DatabaseService(uid: user.uid).userData,
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            UserData userData = snapshot.data;
 
-          body: ListView(
-            children: <Widget>[
-              Container(
-                alignment: Alignment.center,
-                padding: EdgeInsets.all(10),
-                child: Text(
-                  'Report',
-                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30),
-                ),
-              ),
-              Container(
-                alignment: Alignment.center,
-                padding: EdgeInsets.all(10),
-                child: Text(
-                  'Report any inconsistent data by entering the details below. Upload image from either gallery or camera',
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.all(10),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Enter vehicle number',
-                  ),
-                  validator: (value) {
-                    if (value.isEmpty) {
-                      return 'Vehicle number cannot be empty';
-                    }
-                    _formKey.currentState.save();
-                    return null;
-                  },
-                  onSaved: (value) => vehicle_no = value,
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.all(10),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Enter description',
-                  ),
-                  validator: (value) {
-                    if (value.isEmpty) {
-                      return 'Description cannot be empty';
-                    }
-                    _formKey.currentState.save();
-                    return null;
-                  },
-                  onSaved: (value) => description = value,
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.fromLTRB(10.0, 0.0, 0, 0),
-                child: Row(
+            return loading ? Loading() : Scaffold(
+                appBar: ApplicationBar(),
+                body: SafeArea(
+                  child: Form(
+                  key: _formKey,
+                  child: Padding(
+                  padding: EdgeInsets.all(10),
+                child: ListView(
                   children: <Widget>[
-                    Text(
-                    'Choose image',
-                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
-                  ),
-                    IconButton(
-                      icon: Icon(Icons.photo_camera),
-                      onPressed: () => _pickImage(ImageSource.camera),
-                      color: Colors.grey[400],
-                    ),
-                    IconButton(
-                      icon: Icon(Icons.photo_library),
-                      onPressed: () => _pickImage(ImageSource.gallery),
-                      color: Colors.grey[400],
-                    ),
-                  ],
-                ),
-              ),
-              if (_imageFile != null) ...[
-                Image.file(_imageFile),
-                Row(
-                  children: <Widget>[
-                    FlatButton(
-                      child: Icon(Icons.crop),
-                      onPressed: _cropImage,
-                    ),
-                    FlatButton(
-                      child: Icon(Icons.refresh),
-                      onPressed: _clear,
-                    ),
-                  ],
-                ),
-                Uploader(file: _imageFile)
-              ],
-              Container(
-                height: 75,
-                margin: EdgeInsets.fromLTRB(90.0, 15.0, 0, 0),
-                child: Row(
-                  children: <Widget>[
-                    RaisedButton(
-                      onPressed: () {},
+                    Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(10),
                       child: Text(
                         'Report',
-                        style: TextStyle(fontSize: 18),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 30),
                       ),
-                      color: Colors.lightBlue,
                     ),
-                    SizedBox(
-                      width: 60.0,
-                    ),
-                    RaisedButton(
-                      onPressed: () {},
+                    Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(10),
                       child: Text(
-                        'Clear',
-                        style: TextStyle(fontSize: 18),
+                        'Report any inconsistent data by entering the details below. Upload image from either gallery or camera',
                       ),
-                      color: Colors.red,
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: 'Enter vehicle number',
+                        ),
+                        validator: (value) {
+                          if (value.isEmpty) {
+                            return 'Vehicle number cannot be empty';
+                          }
+                          _formKey.currentState.save();
+                          return null;
+                        },
+                        onChanged: (value) =>
+                            setState(() => vehicle_no = value),
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: 'Enter description',
+                        ),
+                        validator: (value) {
+                          if (value.isEmpty) {
+                            return 'Description cannot be empty';
+                          }
+                          _formKey.currentState.save();
+                          return null;
+                        },
+                        onChanged: (value) =>
+                            setState(() => description = value),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(10.0, 0.0, 0, 0),
+                      child: Row(
+                        children: <Widget>[
+                          Text(
+                            'Choose image',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w600, fontSize: 20),
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.photo_camera),
+                            onPressed: () => _pickImage(ImageSource.camera),
+                            color: Colors.grey[400],
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.photo_library),
+                            onPressed: () => _pickImage(ImageSource.gallery),
+                            color: Colors.grey[400],
+                          ),
+                        ],
+                      ),
+                    ),
+                    if (_imageFile != null) ...[
+                      Image.file(_imageFile),
+                      Row(
+                        children: <Widget>[
+                          FlatButton(
+                            child: Icon(Icons.crop),
+                            onPressed: _cropImage,
+                          ),
+                          FlatButton(
+                            child: Icon(Icons.refresh),
+                            onPressed: _clear,
+                          ),
+                        ],
+                      ),
+                      Uploader(file: _imageFile)
+                    ],
+                    Container(
+                      height: 75,
+                      margin: EdgeInsets.fromLTRB(90.0, 15.0, 0, 0),
+                      child: Row(
+                        children: <Widget>[
+                          RaisedButton(
+                            onPressed: () async {
+                              if (_formKey.currentState.validate()) {
+                                setState(() => loading = true);
+                                await DatabaseService(uid: user.uid).updateUserData(
+                                  vehicle_no ?? userData.vehicleId,
+                                  description ?? userData.desc,
+                                );
+                                Navigator.of(context)
+                                  .pushReplacementNamed(UserHomePage.route);
+                              }
+                            },
+                            child: Text(
+                              'Report',
+                              style: TextStyle(fontSize: 18),
+                            ),
+                            color: Colors.lightBlue,
+                          ),
+                          SizedBox(
+                            width: 60.0,
+                          ),
+                          RaisedButton(
+                            onPressed: () {},
+                            child: Text(
+                              'Clear',
+                              style: TextStyle(fontSize: 18),
+                            ),
+                            color: Colors.red,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          FlatButton(
+                              onPressed: () async => Navigator.of(context)
+                                  .pushReplacementNamed(ViolationPage.route),
+                              child: Text(
+                                'Report unauthorized users',
+                              )),
+                        ],
+                      ),
                     ),
                   ],
-                ),
-              ),
-              Container(
-                alignment: Alignment.center,
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    FlatButton(
-                    onPressed: () async=> Navigator.of(context)
-                    .pushReplacementNamed(ViolationPage.route),
-                    child: Text('Report unauthorized users',
-                    )),
-                  ],
-                ),
-              ),
-            ],
-          )),
-    );
+                ))
+                ))
+                );
+          } else {
+            return Loading();
+          }
+        });
   }
 }
 
@@ -228,7 +249,6 @@ class Uploader extends StatefulWidget {
 }
 
 class _UploaderState extends State<Uploader> {
-
   final FirebaseStorage _storage =
       FirebaseStorage(storageBucket: 'gs://campus-parking-28bb8.appspot.com/');
   StorageUploadTask _uploadTask;
@@ -281,4 +301,3 @@ class _UploaderState extends State<Uploader> {
     }
   }
 }
-

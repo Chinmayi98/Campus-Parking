@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\S536844\\Desktop\\Campus-Parking\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
-=======
-            "outputFile": "C:\\Users\\S536844\\Desktop\\campus_parking_report_page\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+            "outputFile": "C:\\Users\\S536844\\Desktop\\Flutter Code\\Campus-Parking\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\S536844\\.gradle\\caches\\transforms-2\\files-2.1\\a1c6a53639aba7d8d429c16999b43ffe\\jetified-ucrop-2.2.3\\res\\values-ko\\values-ko.xml",

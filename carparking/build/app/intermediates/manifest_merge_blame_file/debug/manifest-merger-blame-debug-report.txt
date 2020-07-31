@@ -12,25 +12,14 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-<<<<<<< HEAD
-14-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-15-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+15-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+15-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-16-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
-16-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
-=======
-14-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\debug\AndroidManifest.xml:6:22-64
-15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-15-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
-16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-16-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
-16-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+16-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
+16-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
 17    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 18-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\S536844\.gradle\caches\transforms-2\files-2.1\9e7f6373f1e67d07ff6618411480187d\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:5-79
@@ -52,56 +41,30 @@
 27         FlutterApplication and put your custom class here.
 28    -->
 29    <application
-<<<<<<< HEAD
-29-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:8:5-51:19
+29-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:8:5-51:19
 30        android:name="io.flutter.app.FlutterApplication"
-30-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:9:9-57
-=======
-29-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:8:5-51:19
-30        android:name="io.flutter.app.FlutterApplication"
-30-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:9:9-57
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+30-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:9:9-57
 31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 31-->[androidx.core:core:1.1.0] C:\Users\S536844\.gradle\caches\transforms-2\files-2.1\03de50801950aab64f0548832a05435c\core-1.1.0\AndroidManifest.xml:24:18-86
 32        android:debuggable="true"
 33        android:icon="@mipmap/ic_launcher"
-<<<<<<< HEAD
-33-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:11:9-43
+33-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:11:9-43
 34        android:label="testing" >
-34-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:10:9-32
+34-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:10:9-32
 35        <activity
-35-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:12:9-40:20
+35-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:12:9-40:20
 36            android:name="com.example.testing.MainActivity"
-36-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:13:13-41
+36-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:13:13-41
 37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-37-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:16:13-163
+37-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:16:13-163
 38            android:hardwareAccelerated="true"
-38-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:17:13-47
+38-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:17:13-47
 39            android:launchMode="singleTop"
-39-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:14:13-43
+39-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:14:13-43
 40            android:theme="@style/LaunchTheme"
-40-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:15:13-47
+40-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:15:13-47
 41            android:windowSoftInputMode="adjustResize" >
-41-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:18:13-55
-=======
-33-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:11:9-43
-34        android:label="testing" >
-34-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:10:9-32
-35        <activity
-35-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:12:9-40:20
-36            android:name="com.example.testing.MainActivity"
-36-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:13:13-41
-37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-37-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:16:13-163
-38            android:hardwareAccelerated="true"
-38-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:17:13-47
-39            android:launchMode="singleTop"
-39-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:14:13-43
-40            android:theme="@style/LaunchTheme"
-40-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:15:13-47
-41            android:windowSoftInputMode="adjustResize" >
-41-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:18:13-55
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+41-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:18:13-55
 42
 43            <!--
 44                 Specifies an Android theme to apply to this Activity as soon as
@@ -110,19 +73,11 @@
 47                 to determine the Window background behind the Flutter UI.
 48            -->
 49            <meta-data
-<<<<<<< HEAD
-49-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:23:13-26:17
+49-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:23:13-26:17
 50                android:name="io.flutter.embedding.android.NormalTheme"
-50-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:24:15-70
+50-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:24:15-70
 51                android:resource="@style/NormalTheme" />
-51-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:25:15-52
-=======
-49-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:23:13-26:17
-50                android:name="io.flutter.embedding.android.NormalTheme"
-50-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:24:15-70
-51                android:resource="@style/NormalTheme" />
-51-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:25:15-52
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+51-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:25:15-52
 52            <!--
 53                 Displays an Android View that continues showing the launch screen
 54                 Drawable until Flutter paints its first frame, then this splash
@@ -131,141 +86,74 @@
 57                 Flutter's first frame.
 58            -->
 59            <meta-data
-<<<<<<< HEAD
-59-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:32:13-35:17
+59-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:32:13-35:17
 60                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-60-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:33:15-79
+60-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:33:15-79
 61                android:resource="@drawable/launch_background" />
-61-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:34:15-61
+61-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:34:15-61
 62
 63            <intent-filter>
-63-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:36:13-39:29
+63-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:36:13-39:29
 64                <action android:name="android.intent.action.MAIN" />
-64-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:37:17-68
-64-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:37:25-66
+64-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:37:17-68
+64-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:37:25-66
 65
 66                <category android:name="android.intent.category.LAUNCHER" />
-66-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:38:17-76
-66-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:38:27-74
+66-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:38:17-76
+66-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:38:27-74
 67            </intent-filter>
 68        </activity>
 69        <activity
-69-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:42:9-45:67
+69-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:42:9-45:67
 70            android:name="com.yalantis.ucrop.UCropActivity"
-70-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:43:9-56
+70-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:43:9-56
 71            android:screenOrientation="portrait"
-71-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:44:9-45
+71-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:44:9-45
 72            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-72-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:45:9-65
-=======
-59-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:32:13-35:17
-60                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-60-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:33:15-79
-61                android:resource="@drawable/launch_background" />
-61-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:34:15-61
-62
-63            <intent-filter>
-63-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:36:13-39:29
-64                <action android:name="android.intent.action.MAIN" />
-64-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:37:17-68
-64-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:37:25-66
-65
-66                <category android:name="android.intent.category.LAUNCHER" />
-66-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:38:17-76
-66-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:38:27-74
-67            </intent-filter>
-68        </activity>
-69        <activity
-69-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:42:9-45:67
-70            android:name="com.yalantis.ucrop.UCropActivity"
-70-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:43:9-56
-71            android:screenOrientation="portrait"
-71-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:44:9-45
-72            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-72-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:45:9-65
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+72-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:45:9-65
 73        <!--
 74             Don't delete the meta-data below.
 75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 76        -->
 77        <meta-data
-<<<<<<< HEAD
-77-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:48:9-50:33
+77-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:48:9-50:33
 78            android:name="flutterEmbedding"
-78-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:49:13-44
+78-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:49:13-44
 79            android:value="2" />
-79-->C:\Users\S536844\Desktop\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:50:13-30
+79-->C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\android\app\src\main\AndroidManifest.xml:50:13-30
 80
 81        <service
-81-->[:firebase_auth] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+81-->[:firebase_auth] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 82            android:name="com.google.firebase.components.ComponentDiscoveryService"
-82-->[:firebase_auth] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
-=======
-77-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:48:9-50:33
-78            android:name="flutterEmbedding"
-78-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:49:13-44
-79            android:value="2" />
-79-->C:\Users\S536844\Desktop\campus_parking_report_page\carparking\android\app\src\main\AndroidManifest.xml:50:13-30
-80
-81        <service
-81-->[:firebase_auth] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-82            android:name="com.google.firebase.components.ComponentDiscoveryService"
-82-->[:firebase_auth] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+82-->[:firebase_auth] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 83            android:directBootAware="true"
 83-->[com.google.firebase:firebase-common:19.3.0] C:\Users\S536844\.gradle\caches\transforms-2\files-2.1\9ebe31a492366122ddf38d19d1e05209\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 84            android:exported="false" >
 84-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\S536844\.gradle\caches\transforms-2\files-2.1\b1a1f3cbf42a404554213efafcd2f2e9\jetified-firebase-auth-17.0.0\AndroidManifest.xml:35:13-37
 85            <meta-data
-<<<<<<< HEAD
-85-->[:firebase_auth] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+85-->[:firebase_auth] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 86                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-86-->[:firebase_auth] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+86-->[:firebase_auth] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
 87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[:firebase_auth] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+87-->[:firebase_auth] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 88            <meta-data
-88-->[:cloud_firestore] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+88-->[:cloud_firestore] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 89                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
-89-->[:cloud_firestore] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+89-->[:cloud_firestore] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
 90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[:cloud_firestore] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+90-->[:cloud_firestore] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 91            <meta-data
-91-->[:firebase_storage] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+91-->[:firebase_storage] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-92-->[:firebase_storage] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+92-->[:firebase_storage] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
 93                android:value="com.google.firebase.components.ComponentRegistrar" />
-93-->[:firebase_storage] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+93-->[:firebase_storage] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 94            <meta-data
-94-->[:firebase_core] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+94-->[:firebase_core] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 95                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-95-->[:firebase_core] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+95-->[:firebase_core] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
 96                android:value="com.google.firebase.components.ComponentRegistrar" />
-96-->[:firebase_core] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-=======
-85-->[:firebase_auth] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-86                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-86-->[:firebase_auth] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[:firebase_auth] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-88            <meta-data
-88-->[:cloud_firestore] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-89                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
-89-->[:cloud_firestore] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
-90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[:cloud_firestore] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-91            <meta-data
-91-->[:firebase_storage] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-92-->[:firebase_storage] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
-93                android:value="com.google.firebase.components.ComponentRegistrar" />
-93-->[:firebase_storage] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-94            <meta-data
-94-->[:firebase_core] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-95                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-95-->[:firebase_core] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
-96                android:value="com.google.firebase.components.ComponentRegistrar" />
-96-->[:firebase_core] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+96-->[:firebase_core] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 97            <meta-data
 97-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\S536844\.gradle\caches\transforms-2\files-2.1\b1a1f3cbf42a404554213efafcd2f2e9\jetified-firebase-auth-17.0.0\AndroidManifest.xml:36:13-38:85
 98                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -299,39 +187,21 @@
 112        </service>
 113
 114        <provider
-<<<<<<< HEAD
-114-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+114-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
 115            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-115-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+115-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
 116            android:authorities="com.nwmsu.campus_parking_report_page.flutter.image_provider"
-116-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+116-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
 117            android:exported="false"
-117-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+117-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
 118            android:grantUriPermissions="true" >
-118-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+118-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
 119            <meta-data
-119-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+119-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
 120                android:name="android.support.FILE_PROVIDER_PATHS"
-120-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+120-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
 121                android:resource="@xml/flutter_image_picker_file_paths" />
-121-->[:image_picker] C:\Users\S536844\Desktop\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
-=======
-114-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
-115            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-115-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
-116            android:authorities="com.nwmsu.campus_parking_report_page.flutter.image_provider"
-116-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
-117            android:exported="false"
-117-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
-118            android:grantUriPermissions="true" >
-118-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
-119            <meta-data
-119-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
-120                android:name="android.support.FILE_PROVIDER_PATHS"
-120-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
-121                android:resource="@xml/flutter_image_picker_file_paths" />
-121-->[:image_picker] C:\Users\S536844\Desktop\campus_parking_report_page\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+121-->[:image_picker] C:\Users\S536844\Desktop\Flutter Code\Campus-Parking\carparking\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
 122        </provider>
 123
 124        <activity

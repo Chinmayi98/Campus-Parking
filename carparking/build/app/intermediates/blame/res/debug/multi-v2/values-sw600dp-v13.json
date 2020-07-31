@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\S536844\\Desktop\\Campus-Parking\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-=======
-            "outputFile": "C:\\Users\\S536844\\Desktop\\campus_parking_report_page\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+            "outputFile": "C:\\Users\\S536844\\Desktop\\Flutter Code\\Campus-Parking\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\S536844\\.gradle\\caches\\transforms-2\\files-2.1\\85416d452c9cf640bd115cf9b3af300a\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

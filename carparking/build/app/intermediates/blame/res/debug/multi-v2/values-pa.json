@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\S536844\\Desktop\\Campus-Parking\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
-=======
-            "outputFile": "C:\\Users\\S536844\\Desktop\\campus_parking_report_page\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
->>>>>>> 33e1f9c2d493deb279b148ee6d2070f578a5f754
+            "outputFile": "C:\\Users\\S536844\\Desktop\\Flutter Code\\Campus-Parking\\carparking\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\S536844\\.gradle\\caches\\transforms-2\\files-2.1\\dfda874e59ae708b9dea8d783cda1c4f\\play-services-base-17.0.0\\res\\values-pa\\values.xml",
