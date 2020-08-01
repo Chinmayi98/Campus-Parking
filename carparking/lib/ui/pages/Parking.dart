@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:testing/main.dart';
 import 'package:testing/ui/pages/user_home_page.dart';
 import 'package:testing/ui/widgets/app_bar.dart';
-//class Parking extends StatelessWidget {
 
 class Parking extends StatefulWidget {
   static const String route = '/parking';
@@ -15,8 +13,6 @@ class Parking extends StatefulWidget {
 class _ParkingState extends State<Parking> {
   final _formKeySendOTP = GlobalKey<FormState>();
   final _formKeyVerifyOTP = GlobalKey<FormState>();
-
-  // UserServices _userServices = UserServices();
 
   String _email;
   String _otp;

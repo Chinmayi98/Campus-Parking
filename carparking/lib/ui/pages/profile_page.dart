@@ -33,7 +33,7 @@ class profilePage extends StatefulWidget {
               //  backgroundColor: Colors.blueAccent,
                   backgroundImage: AssetImage('assets/images/user.jpg'),
               ),
-           Text('user name',
+           Text('User Name',
                 style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'DancingScript',

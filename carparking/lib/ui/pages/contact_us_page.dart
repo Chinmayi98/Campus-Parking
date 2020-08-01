@@ -67,7 +67,7 @@ class _ContactUsState extends State<ContactUs> {
                         size: 40.0,
                         color: Colors.grey[400],
                       ),
-                      title: Text('(660) 562-1212',
+                      title: Text('cparking@nwmissouri.edu',
                         style: TextStyle(
                           color: Colors.grey[100],
                           fontSize: 25,

@@ -2,12 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
+import 'package:testing/shared/loading.dart';
 import 'package:testing/ui/widgets/app_bar.dart';
 import 'dart:io';
 
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
+
+import 'package:testing/ui/pages/user_home_page.dart';
 
 class ViolationPage extends StatefulWidget {
   static const String route = '/violation_page';
@@ -26,13 +29,17 @@ class ViolationPageState extends State<ViolationPage> {
   final DateFormat dateFormat = DateFormat('yyyy-MM-dd HH:mm');
 
   final _formKey = GlobalKey<FormState>();
+  bool loading = false;
 
-  String vehicle_no;
-  String parking_lot_id;
-  String slot_id;
+  // ignore: non_constant_identifier_names
+  String vehicle_no = '';
+  // ignore: non_constant_identifier_names
+  String parking_lot_id = '';
+  // ignore: non_constant_identifier_names
+  String slot_id = '';
   String image;
-  String time;
-  String date;
+  String time = '';
+  String date = '';
 
   /// Active image file
   File _imageFile;
@@ -66,7 +73,7 @@ class ViolationPageState extends State<ViolationPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return loading ? Loading() : Scaffold(
       appBar: ApplicationBar(),
       body: Form(
         key: _formKey,
@@ -104,7 +111,8 @@ class ViolationPageState extends State<ViolationPage> {
                       _formKey.currentState.save();
                       return null;
                     },
-                    onSaved: (value) => vehicle_no = value,
+                    onChanged: (value) => 
+                      setState(() => vehicle_no = value),
                   ),
                 ),
                 Container(
@@ -121,7 +129,8 @@ class ViolationPageState extends State<ViolationPage> {
                       _formKey.currentState.save();
                       return null;
                     },
-                    onSaved: (value) => vehicle_no = value,
+                    onChanged: (value) => 
+                      setState(() => parking_lot_id = value),
                   ),
                 ),
                 Container(
@@ -138,7 +147,8 @@ class ViolationPageState extends State<ViolationPage> {
                       _formKey.currentState.save();
                       return null;
                     },
-                    onSaved: (value) => vehicle_no = value,
+                    onChanged: (value) => 
+                      setState(() => slot_id = value),
                   ),
                 ),
                 Container(
@@ -223,7 +233,18 @@ class ViolationPageState extends State<ViolationPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       RaisedButton(
-                        onPressed: () => _clear,
+                        onPressed: () async {
+                          if (_formKey.currentState.validate()) {
+                            setState(() => loading = true);
+                            print(vehicle_no);
+                            print(parking_lot_id);
+                            print(slot_id);
+                            print(selectedDate);
+                            
+                            Navigator.of(context)
+                                  .pushReplacementNamed(UserHomePage.route);
+                          }
+                        },
                         child: Text(
                           'Report',
                           style: TextStyle(fontSize: 18),

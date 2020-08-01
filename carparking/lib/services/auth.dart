@@ -1,5 +1,5 @@
- import 'package:firebase_auth/firebase_auth.dart';
- import 'package:testing/models/user.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:testing/models/user.dart';
 import 'package:testing/services/database.dart';
 
  class AuthService {
@@ -65,5 +65,4 @@ import 'package:testing/services/database.dart';
        return null;
      }
    }
-
- }
+}

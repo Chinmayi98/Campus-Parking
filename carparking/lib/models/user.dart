@@ -11,3 +11,13 @@ class UserData {
 
   UserData({this.uid, this.vehicleId, this.desc});
 }
+
+class UserViolationData {
+  final String vehicle_no;
+  final String parking_lot_id;
+  final String slot_id;
+  final String time;
+  final String date;
+
+  UserViolationData({this.vehicle_no, this.parking_lot_id, this.slot_id, this.time, this.date});
+}

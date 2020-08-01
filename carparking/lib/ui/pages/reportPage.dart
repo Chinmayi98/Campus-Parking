@@ -33,6 +33,7 @@ class _reportPageState extends State<reportPage> {
   final _formKey = GlobalKey<FormState>();
   bool loading = false;
 
+  // ignore: non_constant_identifier_names
   String vehicle_no ='';
   String image;
   String description = '';
@@ -65,8 +66,6 @@ class _reportPageState extends State<reportPage> {
   /// Remove image
   void _clear() {
     setState(() => _imageFile = null);
-    setState(() => vehicle_no = null);
-    setState(() => description = null);
   }
 
   @override
@@ -145,9 +144,11 @@ class _reportPageState extends State<reportPage> {
                       child: Row(
                         children: <Widget>[
                           Text(
-                            'Choose image',
+                            'Choose Image',
                             style: TextStyle(
-                                fontWeight: FontWeight.w600, fontSize: 20),
+                                fontWeight: FontWeight.w600, 
+                                fontFamily: 'Raleway',
+                                fontSize: 20),
                           ),
                           IconButton(
                             icon: Icon(Icons.photo_camera),
@@ -180,11 +181,14 @@ class _reportPageState extends State<reportPage> {
                     ],
                     Container(
                       height: 75,
-                      margin: EdgeInsets.fromLTRB(90.0, 15.0, 0, 0),
+                      margin: EdgeInsets.fromLTRB(17.0, 15.0, 0, 0),
                       child: Row(
                         children: <Widget>[
-                          RaisedButton(
-                            onPressed: () async {
+                            ButtonTheme(
+                            minWidth: 150.0,
+                            height: 45.0,
+                            child: RaisedButton(
+                              onPressed: () async {
                               if (_formKey.currentState.validate()) {
                                 setState(() => loading = true);
                                 await DatabaseService(uid: user.uid).updateUserData(
@@ -195,25 +199,52 @@ class _reportPageState extends State<reportPage> {
                                   .pushReplacementNamed(UserHomePage.route);
                               }
                             },
-                            child: Text(
-                              'Report',
-                              style: TextStyle(fontSize: 18),
+                              color: Colors.lightBlue,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(18.0),
+                                  side: BorderSide(color: Colors.grey)),
+                              splashColor: Colors.blue,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.report,
+                                    size: 30.0,
+                                    color: Colors.grey[300],
+                                  ),
+                                  Text('Report', 
+                                  style: TextStyle(fontSize: 20.0, 
+                                  ),
+                                  ),
+                                ],
+                              ),
                             ),
-                            color: Colors.lightBlue,
                           ),
                           SizedBox(
                             width: 60.0,
                           ),
-                          RaisedButton(
-                            onPressed: () async {
-                              Navigator.of(context)
-                                  .pushReplacementNamed(reportPage.route);
-                            },
-                            child: Text(
-                              'Clear',
-                              style: TextStyle(fontSize: 18),
+                            ButtonTheme(
+                            minWidth: 150.0,
+                            height: 45.0,
+                            child: RaisedButton(
+                              onPressed: () {
+                                Navigator.of(context).pushReplacementNamed(reportPage.route);
+                              },
+                              color: Colors.red,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(18.0),
+                                  side: BorderSide(color: Colors.grey)),
+                              splashColor: Colors.red,
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.clear,
+                                    size: 30.0,
+                                    color: Colors.grey[300],
+                                  ),
+                                  Text('Clear', style: TextStyle(fontSize: 20.0)),
+                                ],
+                              ),
                             ),
-                            color: Colors.red,
                           ),
                         ],
                       ),
@@ -228,7 +259,7 @@ class _reportPageState extends State<reportPage> {
                               onPressed: () async => Navigator.of(context)
                                   .pushReplacementNamed(ViolationPage.route),
                               child: Text(
-                                'Report unauthorized users',
+                                'Click here to report a violation !',
                               )),
                         ],
                       ),
