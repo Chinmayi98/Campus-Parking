@@ -228,13 +228,16 @@ class ViolationPageState extends State<ViolationPage> {
                           'Report',
                           style: TextStyle(fontSize: 18),
                         ),
-                        color: Colors.lightBlue,
+                        color: Colors.blue[600],
                       ),
                       SizedBox(
                         width: 100.0,
                       ),
                       RaisedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context)
+                                  .pushReplacementNamed(ViolationPage.route);
+                        },
                         child: Text(
                           'Clear',
                           style: TextStyle(fontSize: 18),
@@ -320,8 +323,8 @@ class _UploaderState extends State<Uploader> {
           });
     } else {
       return FlatButton.icon(
-        label: Text('Upload to Firebase'),
-        color: Colors.blue,
+        label: Text('Upload Image'),
+        color: Colors.teal[500],
         icon: Icon(Icons.cloud_upload),
         onPressed: _startUpload,
       );
@@ -329,33 +332,3 @@ class _UploaderState extends State<Uploader> {
   }
 }
 
-// class ApplicationBar extends StatelessWidget implements PreferredSizeWidget {
-//   AppBar appBarWidget = AppBar(
-//     title: Row(
-//       children: [
-//         Padding(
-//           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-//           child: Container(
-//             height: 35.0,
-//             width: 35.0,
-//             child: CircleAvatar(
-//               radius: 50,
-//               backgroundImage: AssetImage('assets/nwmsu_logo.png'),
-//             ),
-//           ),
-//         ),
-//         Text("Campus Parking"),
-//       ],
-//     ),
-//   );
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return appBarWidget;
-//   }
-
-//   @override
-//   Size get preferredSize {
-//     return appBarWidget.preferredSize;
-//   }
-// }

@@ -205,7 +205,10 @@ class _reportPageState extends State<reportPage> {
                             width: 60.0,
                           ),
                           RaisedButton(
-                            onPressed: () {},
+                            onPressed: () async {
+                              Navigator.of(context)
+                                  .pushReplacementNamed(reportPage.route);
+                            },
                             child: Text(
                               'Clear',
                               style: TextStyle(fontSize: 18),
@@ -293,8 +296,8 @@ class _UploaderState extends State<Uploader> {
           });
     } else {
       return FlatButton.icon(
-        label: Text('Upload to Firebase'),
-        color: Colors.blue,
+        label: Text('Upload Image'),
+        color: Colors.teal[500],
         icon: Icon(Icons.cloud_upload),
         onPressed: _startUpload,
       );
