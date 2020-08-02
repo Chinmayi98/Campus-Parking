@@ -123,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
                         dynamic result = await _auth.signInWithEmailAndPassword(_email, _password);
                         if(result == null){
                             setState(() {
-                              _error = 'Could not log in';
+                              _error = 'Incorrect email or password';
                               loading = false;
                             });
                           } 
@@ -131,18 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                             Navigator.of(context)
                              .pushReplacementNamed(UserHomePage.route);
                           }
-                      }
-                      // Navigator.of(context)
-                      //      .pushReplacementNamed(UserHomePage.route);
-                    //   dynamic result = await _auth.signInAnon();
-                    //   if (result == null) {
-                    //     print('Error signing in');
-                    //   }
-                    //   else {
-                    //     print('Signed In');
-                    //     print(result.uid);
-                    //     Navigator.of(context)
-                    //         .pushReplacementNamed(UserHomePage.route);
+                        }
                       },
                     child: Text(
                       'Login',

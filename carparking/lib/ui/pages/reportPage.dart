@@ -6,12 +6,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:testing/shared/loading.dart';
+import 'package:provider/provider.dart';
 
+import 'package:testing/shared/loading.dart';
 import 'package:testing/ui/pages/violationPage.dart';
 import 'package:testing/ui/widgets/app_bar.dart';
 import 'package:testing/services/database.dart';
-import 'package:provider/provider.dart';
 import 'package:testing/models/user.dart';
 import 'package:testing/ui/pages/user_home_page.dart';
 

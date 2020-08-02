@@ -47,8 +47,10 @@ import 'package:testing/services/database.dart';
        AuthResult result = await _auth.createUserWithEmailAndPassword(email: _emailId, password: _password);
        FirebaseUser user = result.user;
 
-       // Creating a new document for the user with uid
+       // Creating a new report document for the user with uid
        await DatabaseService(uid: user.uid).updateUserData('default', 'default');
+       // Creating a new violation document for the user with uid
+       await DatabaseService(uid: user.uid).updateUserViolationData('default', 'default','default', 'default','default');
        return _userFromFirebaseUser(user);
      } catch(e) {
        print(e.toString());
