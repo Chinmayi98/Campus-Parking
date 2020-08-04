@@ -163,19 +163,6 @@ class _SignUpPageState extends State<SignUpPage> {
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: RaisedButton(
                     onPressed: () async {
-                      // _formKey.currentState.save();
-
-                      // var createUserRequest = CreateUserRequest(
-                      //     emailId: _emailId,
-                      //     password: _password,
-                      //     verifiedPassword: _repeatPassword,
-                      //     registrationPlate: _registrationPlate,
-                      //     name: _name);
-                      // print(createUserRequest);
-
-                      // final result =
-                      //     await _userServices.createUser(createUserRequest);
-                      // if (result != null) {
                         if(_formKey.currentState.validate()){
                           setState(() => loading = true);
                           dynamic result = await _auth.registerWithEmailAndPassword(_emailId, _password);
@@ -185,16 +172,12 @@ class _SignUpPageState extends State<SignUpPage> {
                               loading = false;
                             });
                           } 
-                          else {
+                          else {                            
                              Navigator.of(context)
                                    .pushReplacementNamed(LoginPage.route);
                           }
-                    
                         }
-                      // Navigator.of(context)
-                      //     .pushReplacementNamed(LoginPage.route);
                     },
-                    //},
                     child: Text(
                       'Create Account',
                       style: TextStyle(fontSize: 18),

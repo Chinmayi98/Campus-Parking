@@ -51,6 +51,7 @@ import 'package:testing/services/database.dart';
        await DatabaseService(uid: user.uid).updateUserData('default', 'default');
        // Creating a new violation document for the user with uid
        await DatabaseService(uid: user.uid).updateUserViolationData('default', 'default','default', 'default','default');
+       await DatabaseService(uid: user.uid).updateUserTicketData('default', 'default');
        return _userFromFirebaseUser(user);
      } catch(e) {
        print(e.toString());

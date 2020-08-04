@@ -22,3 +22,11 @@ class UserViolationData {
 
   UserViolationData({this.uid, this.vehicle_no, this.parking_lot_id, this.slot_id, this.time, this.date});
 }
+
+class UserTicketData {
+  final String uid;
+  final String vehicle_no;
+  final String reason;
+
+  UserTicketData({this.uid, this.vehicle_no, this.reason});
+}
